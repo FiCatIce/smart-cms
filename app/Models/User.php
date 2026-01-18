@@ -9,7 +9,6 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
     /**
@@ -21,6 +20,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',          // <--- WAJIB ADA
+        'workspace_id',  // <--- WAJIB ADA (Biar fitur workspace jalan)
+        'is_active',     // <--- Tambahkan jika ada kolom ini
     ];
 
     /**

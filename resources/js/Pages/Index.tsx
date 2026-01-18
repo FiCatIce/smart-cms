@@ -1,4 +1,5 @@
-import { DashboardLayout } from "@/Components/layout/DashboardLayout";
+// Hapus kurung kurawal karena DashboardLayout adalah export default
+import DashboardLayout from "@/Components/layout/DashboardLayout"; 
 import { WelcomeCard } from "@/Components/dashboard/WelcomeCard";
 import { FilamentCard } from "@/Components/dashboard/FilamentCard";
 

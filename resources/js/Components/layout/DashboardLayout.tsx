@@ -1,12 +1,13 @@
 import { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
-import { Header } from "./Header";
+import  Header  from "./Header";
 
 interface DashboardLayoutProps {
   children: ReactNode;
 }
 
-export function DashboardLayout({ children }: DashboardLayoutProps) {
+// Tambahkan 'default' di sini
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className="flex h-screen overflow-hidden bg-background">
       <Sidebar />
